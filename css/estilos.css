@@ -59,7 +59,7 @@ header label{
 		width: 100%;
 		height: 100%;
 		transform: translateX(-100%);
-		transition: all 500ms;
+		transition: all 300ms;
 	}
 	.menu ul{
 		display: block;
@@ -79,5 +79,8 @@ header label{
 	}
 	.menu ul ul{
 		background: rgba(18, 246, 239, 0.3);
+	}
+	.menu ul ul a{
+		padding: 15px 35px;
 	}
 }
