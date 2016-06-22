@@ -10,6 +10,11 @@ header{
 	color: #fff;
 	display: flex;
 	justify-content: center;
+	position: fixed;
+	width: 100%;
+}
+body{
+	background: url(../img/gray.jpg) repeat;
 }
 #btn-menu{
 	display: none;
@@ -19,6 +24,13 @@ header label{
 	font-size: 30px;
 	display: none;
 }
+header nav ul li a span {
+	margin-right: 5px;
+}
+.cabecera{
+	display: none;
+}
+
 .menu ul{
 	background: #12bbf0;
 	display: flex;
@@ -28,7 +40,7 @@ header label{
 	display: none;
 }
 .menu a {
-	display: block;
+	display:block;
 	padding: 15px 20px;
 	color: #fff;
 	text-decoration: none;
@@ -36,21 +48,199 @@ header label{
 .menu a:hover{
 	background: rgba(0, 0, 0, 0.3);
 }
-.menu a span{
-	margin-left: 10px;
+.icon-chevron-down{
+	margin-left: 5px;
+}
+.icon-dot-single{
+	float: right;
+	position: relative;
 }
 .menu ul li:hover ul{
 	display: block;
 	position: absolute;
+	width: 250px;
+	
 }
+.texto{
+	background: #fff;
+	max-width: 850px;
+	margin: auto;
+	border-radius: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	}
+
+/**Header boton social**/
+.headerSocial{
+	display: block;
+	font-size: 10px;
+	padding: 5px;
+	border-radius: 50%;
+}
+.headerSocial a{
+	text-align: center;
+	border-radius: 10px;
+}
+.headerSocial .icon-facebook{background: #3b5998;}
+.headerSocial .icon-twitter{background: #00abf0;}
+.headerSocial .icon-google{background: #d95232;}
+.headerSocial .icon-instagram{background: #00558a}
+.headerSocial .icon-youtube{background: #CC181E;}
+.headerSocial a:hover{
+	background: #000;
+}
+/**Barra Vertical Social**/
+.social{
+	position: fixed;
+	left: 0;
+	top: 200px;
+}
+.social ul{
+	list-style: none;
+}
+.social ul li a{
+	display: inline-block;
+	color: #fff;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	 -o-transition: all 500ms ease;
+	 transition: all 500ms ease; 
+}
+.social ul li .icon-facebook{background: #3b5998;}
+.social ul li .icon-twitter{background: #00abf0;}
+.social ul li .icon-google{background: #d95232;}
+.social ul li .icon-instagram{background: #00558a;}
+.social ul li .icon-youtube{background: #CC181E;}
+.social ul li .icon-mail{background: #666666;}
+.social ul li a:hover{
+	padding: 10px 30px;
+	background: #000;
+}
+
+/***Estilos de los Textos***/
+.textHola{
+	text-align: center;
+	font-family: verdana;
+	font-size: 35px;
+	color: white;
+	padding-bottom: 20px;
+	padding-top: 60px;
+	}
+h2{
+	text-align: center;
+	font-family: verdana;
+	font-size: 20px;
+	color: white;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+h3{
+	text-align: center;
+	font-family: verdana;
+	font-size: 20px;
+	color: white;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+p{
+	max-width: 800px;
+	margin: 0 auto;
+	font-family: time-news-roman;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-align: center;
+	}
+	/***Footer****/
+footer{
+	background: #12bbf0;
+	padding: 15px;
+	text-align: center;
+}
+footer h2{
+	color: white;
+	padding-bottom: 5px;
+}
+/***Boton Social Footer***/
+.btnSocial{
+	padding: 15px;
+	margin: auto;
+	max-width: 700px;
+	background: rgba(18, 246, 239, 0.3);
+	justify-content: center;
+	border-radius: 10px;
+}
+.btnSocial h3{
+	padding-bottom: 5px;
+}
+.btnSocial ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.btnSocial ul li{
+	padding: 4px;
+}
+.btnSocial ul li a{
+	display: inline-block;
+	border-radius: 50%;
+	color: #fff;
+	padding: 15px 15px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	 -o-transition: all 500ms ease;
+	 transition: all 500ms ease; 
+}
+.btnSocial ul li .icon-facebook{background: #3b5998;}
+.btnSocial ul li .icon-twitter{background: #00abf0;}
+.btnSocial ul li .icon-google{background: #d95232;}
+.btnSocial ul li .icon-instagram{background: #00558a}
+.btnSocial ul li .icon-youtube{background: #CC181E;}
+.btnSocial ul li a:hover{
+	transform: scale(1.3);
+	background: #000;
+	border-radius: 50%;
+}
+/**Media Queries**/
+@media (max-width:1130px){
+	.headerSocial{
+		display: none;
+	}
+
+}
+
+@media (max-width:1080px){
+
+	.texto{
+		max-width: 650px;
+		transition: all 0.5s;
+	}
+	.btnSocial{
+	max-width: 500px;
+}
+@media (max-width:800px){
+	.social{
+		display: none;
+	}
+}
+
 @media (max-width:768px){
 	header{
 		justify-content: flex-end;
 		align-items: center;
+		position: fixed;
+		width: 100%;
 	}
 	header label{
 		display: block;
 		margin-right: 10px;
+	}
+	.cabecera{
+		display: block;
+		margin: auto;
+		font-size: 15px;
+		font-family: verdana;
+		padding: 15px;
 	}
 	.menu{
 		position: absolute;
@@ -60,17 +250,21 @@ header label{
 		height: 100%;
 		transform: translateX(-100%);
 		transition: all 300ms;
+		position: fixed;
 	}
 	.menu ul{
 		display: block;
 		height: 100%;
 		background: rgba(18, 187, 240, 0.97);
 	}
+	.menu li {
+		border-top: 1px solid rgba(18, 246, 239, 0.3);
+	}
 	.menu ul li:hover ul{
 		display: none;
 		position: static;
 	}
-	.menu a span{
+	.menu a .icon-chevron-down{
 		position: absolute;
 		right: 5px;
 	}
@@ -81,5 +275,68 @@ header label{
 		background: rgba(18, 246, 239, 0.3);
 	}
 	.menu ul ul a{
-		padding: 15px 35px;
+		padding: 15px 40px;
 	}
+	.social{
+		display: none;
+
+	}
+	/**Header boton social**/
+	.headerSocial{
+	display: inline-block;
+	list-style: none;
+	justify-content: space-between;
+}
+.headerSocial a{
+	color: #fff;
+	text-decoration: none;
+	border-radius: 50%;
+	padding: 25px 25px;
+	-webkit-transition: all 500ms ease;
+	 -o-transition: all 500ms ease;
+	 transition: all 500ms ease; 
+}
+.headerSocial ul li .icon-facebook{background: #3b5998;}
+.headerSocial ul li .icon-twitter{background: #00abf0;}
+.headerSocial ul li .icon-google{background: #d95232;}
+.headerSocial ul li .icon-instagram{background: #00558a}
+.headerSocial ul li .icon-youtube{background: #CC181E;}
+.headerSocial a:hover{
+	background: #000;
+	transform: scale(1.1);
+	border-radius: 50%;
+}
+	.texto{
+		background: #fff;
+		max-width: 450px;
+		margin: auto;
+		border-radius: 10px;
+	}
+	h1{
+		text-align: center;
+		font-family: verdana;
+		font-size: 35px;
+		color: white;
+		padding-bottom: 20px;
+	}
+	p{
+		max-width: 400px;
+		background: ;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin: 0 auto;
+		font-family: time-news-roman;
+		font-size: 15px;
+		text-align: center;
+}
+	footer h2{
+	color: white;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+footer h3*
+	font-size 15px;
+.btnSocial{
+	max-width: 400px;
+}

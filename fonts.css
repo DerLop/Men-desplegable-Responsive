@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?be5wzh');
-    src:    url('fonts/icomoon.eot?be5wzh#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?be5wzh') format('truetype'),
-        url('fonts/icomoon.woff?be5wzh') format('woff'),
-        url('fonts/icomoon.svg?be5wzh#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?x4bxc7');
+    src:    url('fonts/icomoon.eot?x4bxc7#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?x4bxc7') format('truetype'),
+        url('fonts/icomoon.woff?x4bxc7') format('woff'),
+        url('fonts/icomoon.svg?x4bxc7#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -576,7 +576,7 @@
 .icon-help:before {
     content: "\e9bc";
 }
-.icon-home2:before {
+.icon-home:before {
     content: "\e900";
 }
 .icon-hour-glass:before {
@@ -1179,7 +1179,13 @@
 .icon-youtube:before {
     content: "\ea80";
 }
-.icon-home:before {
-    content: "\ea81";
+.icon-appleinc:before {
+    content: "\ec3f";
+}
+.icon-android:before {
+    content: "\ec41";
+}
+.icon-windows:before {
+    content: "\ec43";
 }
 
